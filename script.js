@@ -11,7 +11,7 @@ async function loadEvents() {
         }
 
         const data = await response.json();
-        const events = data.events || [];
+        const events = data || [];
 
         // Hide loading
         loadingElement.style.display = 'none';
