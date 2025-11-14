@@ -5,7 +5,7 @@ async function loadEvents() {
     const noEventsElement = document.getElementById('no-events');
 
     try {
-        const response = await fetch('events.json');
+        const response = await fetch('https://pub-997d3d01e446499d89ff2518311a56fa.r2.dev/events.json');
         if (!response.ok) {
             throw new Error('Failed to load events');
         }
